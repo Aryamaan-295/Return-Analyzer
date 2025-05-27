@@ -74,8 +74,8 @@ def correlation_tab(default_df):
     fig.update_layout(
         xaxis=dict(tickangle=-45, tickfont=dict(size=12), constrain='domain'),
         yaxis=dict(autorange='reversed', tickfont=dict(size=12), scaleanchor='x'),
-        margin=dict(l=0, r=0, t=10, b=10),
-        width=1600, height=1600,
+        margin=dict(l=0, r=0, t=0, b=0),
+        width=1600, height=1200,
         plot_bgcolor='rgba(0,0,0,0)', paper_bgcolor='rgba(0,0,0,0)', font_color='var(--fg)'
     )
     st.plotly_chart(fig, use_container_width=False, config={'displayModeBar': False})
